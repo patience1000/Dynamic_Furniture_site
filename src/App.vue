@@ -106,13 +106,22 @@
             
         </div>
         <div class="abt-img">
-            <img src="'./assets/pexels-lisa-fotios-1957477.jpg/pexels-lisa-fotios-1957477.jpg">
+            <img v-bind:src="AppImage">
         </div>          
       </div>          
    </body>
 </template>
   
-  <script>
+<script>
+    export default {
+      name: "App",
+      data(){
+        return{
+            App: '',
+            AppImage: require("../assets/Images/pexels-lisa-fotios-1957477.jpg/pexels-lisa-fotios-1957477.jpg")
+        }
+      }
+}
   
- </script>
+</script>
 
