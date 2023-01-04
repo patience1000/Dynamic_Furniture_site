@@ -13,7 +13,7 @@
             <div id="div1">
                 <div class="sale1">
                     <div class="sale1-section">
-                        <img src="images/images (8).jfif">
+                        <img v-for="img in sale1" v-bind:src="img"/>
                         <h3>Palour Sofa</h3>
                         <p>Type: yellow sofa</p>
                         <p>Price: $350</p>
@@ -57,7 +57,7 @@
                     </div> 
         
                     <div class="sale2-section">
-                        <img src="src\assets\pexels-houzlook-com-3356416.jpg" alt="">
+                        <img v-for="img in images" v-bind:src="img"/>
                         <h3>Loxy Sofa</h3>
                         <p>Type: yellow sofa</p>
                         <p>Price: $450</p>
@@ -106,7 +106,7 @@
             
         </div>
         <div class="abt-img">
-            <img v-bind:src="AppImage">
+            <img v-for="img in images" v-bind:src="img"/>
         </div>          
       </div>          
    </body>
@@ -118,7 +118,12 @@
       data(){
         return{
             App: '',
-            AppImage: require("../assets/Images/pexels-lisa-fotios-1957477.jpg/pexels-lisa-fotios-1957477.jpg")
+            images:['https://media.architecturaldigest.com/photos/5f4e9c54072307c75638c0f1/1:1/w_1280%2Cc_limit/Screen%2520Shot%25202020-09-01%2520at%25203.08.43%2520PM.png'],
+            sale1:[''],
+            sale2:[''],
+            sale3:[''],
+            sal
+
         }
       }
 }
