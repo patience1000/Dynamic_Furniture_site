@@ -23,7 +23,7 @@
                     </div> 
         
                     <div class="sale1-section">
-                        <img src="images/pexels-vecislavas-popa-1571470.jpg">
+                        <img v-for="img in sale5" v-bind:src="img"/>
                         <h3>White Sofa</h3>
                         <p>Type: white sofa</p>
                         <p>Price: $450</p>
@@ -33,7 +33,7 @@
                     </div>
         
                     <div class="sale1-section">
-                        <img src="images/download (9).jfif">
+                        <img v-for="img in sale4" v-bind:src="img"/>
                         <h3>Blue Sofa</h3>
                         <p>Type: yellow sofa</p>
                         <p>Price: $450</p>
@@ -47,7 +47,7 @@
             <div id="div2">
                 <div class="sale2">
                     <div class="sale2-section">
-                        <img src="src\assets\pexels-eneida-nieves-1112598.jpg" alt="">
+                        <img v-for="img in sale3" v-bind:src="img"/>
                         <h3>Lamp</h3>
                         <p>Type: yellow sofa</p>
                         <p>Price: $450</p>
@@ -57,7 +57,7 @@
                     </div> 
         
                     <div class="sale2-section">
-                        <img v-for="img in images" v-bind:src="img"/>
+                        <img v-for="img in sale2" v-bind:src="img"/>
                         <h3>Loxy Sofa</h3>
                         <p>Type: yellow sofa</p>
                         <p>Price: $450</p>
@@ -67,7 +67,7 @@
                     </div>
         
                     <div class="sale2-section">
-                        <img src="src\assets\pexels-eneida-nieves-1112598.jpg" alt="">
+                        <img v-for="img in sale1" v-bind:src="img"/>
                         <h3>Ankara Sofa</h3>    
                         <p>Type: yellow sofa</p>
                         <p>Price: $450</p>
@@ -122,7 +122,10 @@
             sale1:[''],
             sale2:[''],
             sale3:[''],
-            sale4:['']
+            sale4:[''],
+            sale5:[''],
+            sale6:[''],
+            sale7:['']
 
         }
       }
