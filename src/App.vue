@@ -23,7 +23,7 @@
                     </div> 
         
                     <div class="sale1-section">
-                        <img v-for="img in sale5" v-bind:src="img"/>
+                        <img v-for="img in sale2" v-bind:src="img"/>
                         <h3>White Sofa</h3>
                         <p>Type: white sofa</p>
                         <p>Price: $450</p>
@@ -33,7 +33,7 @@
                     </div>
         
                     <div class="sale1-section">
-                        <img v-for="img in sale4" v-bind:src="img"/>
+                        <img v-for="img in sale3" v-bind:src="img"/>
                         <h3>Blue Sofa</h3>
                         <p>Type: yellow sofa</p>
                         <p>Price: $450</p>
@@ -47,7 +47,7 @@
             <div id="div2">
                 <div class="sale2">
                     <div class="sale2-section">
-                        <img v-for="img in sale3" v-bind:src="img"/>
+                        <img v-for="img in sale4" v-bind:src="img"/>
                         <h3>Lamp</h3>
                         <p>Type: yellow sofa</p>
                         <p>Price: $450</p>
@@ -57,7 +57,7 @@
                     </div> 
         
                     <div class="sale2-section">
-                        <img v-for="img in sale2" v-bind:src="img"/>
+                        <img v-for="img in sale5" v-bind:src="img"/>
                         <h3>Loxy Sofa</h3>
                         <p>Type: yellow sofa</p>
                         <p>Price: $450</p>
@@ -67,7 +67,7 @@
                     </div>
         
                     <div class="sale2-section">
-                        <img v-for="img in sale1" v-bind:src="img"/>
+                        <img v-for="img in sale6" v-bind:src="img"/>
                         <h3>Ankara Sofa</h3>    
                         <p>Type: yellow sofa</p>
                         <p>Price: $450</p>
