@@ -4,7 +4,7 @@
 <template>
    <body style="background-color: #f2f2f2">
         <!-- Furniture slide -->
-        <div class="Sale">
+        <div class="Sale" style="background-image=">
             <marquee><h2>Buy at affordable prices</h2></marquee>
             <div class="switch-btn">
                 <button class="sale2-btn" onclick="Show2()">Prev</button>
@@ -119,13 +119,13 @@
         return{
             App: '',
             images:['https://media.architecturaldigest.com/photos/5f4e9c54072307c75638c0f1/1:1/w_1280%2Cc_limit/Screen%2520Shot%25202020-09-01%2520at%25203.08.43%2520PM.png'],
-            sale1:[''],
-            sale2:[''],
-            sale3:[''],
-            sale4:[''],
-            sale5:[''],
-            sale6:[''],
-            sale7:['']
+            sale1:['https://images.pexels.com/photos/271648/pexels-photo-271648.jpeg?auto=compress&cs=tinysrgb&w=600'],
+            sale2:['https://images.pexels.com/photos/1571472/pexels-photo-1571472.jpeg?auto=compress&cs=tinysrgb&w=600'],
+            sale3:['https://images.pexels.com/photos/1420902/pexels-photo-1420902.png?auto=compress&cs=tinysrgb&w=600'],
+            sale4:['https://images.pexels.com/photos/1420902/pexels-photo-1420902.png?auto=compress&cs=tinysrgb&w=600'],
+            sale5:['https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg?auto=compress&cs=tinysrgb&w=600'],
+            sale6:['https://images.pexels.com/photos/1420902/pexels-photo-1420902.png?auto=compress&cs=tinysrgb&w=600'],
+            sale7:['https://images.pexels.com/photos/1008692/pexels-photo-1008692.jpeg?auto=compress&cs=tinysrgb&w=600']
 
         }
       }
