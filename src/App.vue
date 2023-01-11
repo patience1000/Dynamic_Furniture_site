@@ -34,7 +34,7 @@
         
                     <div class="sale1-section">
                         <img v-for="img in sale3" v-bind:src="img"/>
-                        <h3>Blue Sofa</h3>
+                        <h3>Dinning Set </h3>
                         <p>Type: yellow sofa</p>
                         <p>Price: $450</p>
                         <p>Quantity: <input type="number" placeholder="0"></p>
@@ -121,12 +121,11 @@
             images:['https://media.architecturaldigest.com/photos/5f4e9c54072307c75638c0f1/1:1/w_1280%2Cc_limit/Screen%2520Shot%25202020-09-01%2520at%25203.08.43%2520PM.png'],
             sale1:['https://images.pexels.com/photos/271648/pexels-photo-271648.jpeg?auto=compress&cs=tinysrgb&w=600'],
             sale2:['https://images.pexels.com/photos/1571472/pexels-photo-1571472.jpeg?auto=compress&cs=tinysrgb&w=600'],
-            sale3:['https://images.pexels.com/photos/1420902/pexels-photo-1420902.png?auto=compress&cs=tinysrgb&w=600'],
+            sale3:['https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg?auto=compress&cs=tinysrgb&w=600'],
             sale4:['https://images.pexels.com/photos/1420902/pexels-photo-1420902.png?auto=compress&cs=tinysrgb&w=600'],
             sale5:['https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg?auto=compress&cs=tinysrgb&w=600'],
             sale6:['https://images.pexels.com/photos/1420902/pexels-photo-1420902.png?auto=compress&cs=tinysrgb&w=600'],
             sale7:['https://images.pexels.com/photos/1008692/pexels-photo-1008692.jpeg?auto=compress&cs=tinysrgb&w=600']
-
         }
       }
 }
