@@ -9,14 +9,14 @@
  background-color: #BC983C;
 }
 
-.topnav a {
+.topnav a{
  float: left;
  display: block;
  color: #f2f2f2;
- text-align: center;
- padding: 20px 24px;
+ align-items: center;
+ padding: 20px 1px 20px 50px;
  text-decoration: none;
- font-size: 1.3em;
+ font-size: 1.1em;
 }
 
 .topnav a:hover{
@@ -39,12 +39,12 @@
 }
 
 .dropdown .dropbtn {
- font-size: 1.3em;    
+ font-size: 1.1em;    
  border: none;
  outline: none;
  color: #f2f2f2;
  text-align: center;
- padding: 20px 18px;
+ padding: 20px 18px 0px 18px;
  background-color: inherit;
  font-family: inherit;
  margin: 0;
@@ -78,30 +78,26 @@
  color: black;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown.dropdown:hover .dropdown-content {
   display: block;
 }
 
 #head{
    font-size: 1.4em;
-   padding: 16px 90px;
+   padding: 12px 0 0 100px;
    float: left;
    display: block;
    color: black;
    font-weight: 800;
    font-family: "montserrat";
  }
-.topnav .search-container {
- float: right;
- position: relative;
-}
 
 .topnav input[type=text] {
  padding:8px;
  outline: none;
- margin-left: 40px;
  color: #fff;
- border-radius: 3%;
+ border-radius: 1%;
+ margin-left: 12%;
  margin-top: 15px;
  font-size: 0.9em;
  z-index: 1;
@@ -118,15 +114,18 @@
  position:relative;
  right: 30px;
  background-color: #2B495E;
- /* float: right; */
- padding: 6px 10px;
+ padding: 11px 10px;
  margin-top: 15px;
  margin-right: 16px;
  border: none;
 }
+
 #icons{
    float: right;
    padding-right: 20px;
+ }
+ #icons a{
+   margin-left: 25px;
  }
 
 .topnav .search-container button i{
@@ -138,16 +137,113 @@
  background: #ccc;
 }
 
+.shop_now{
+ height: 60vh;
+ display: flex;
+ background-color: #2B495E;
+}
+
+.pep h5{
+ color: #fff;
+ text-align: center;
+ padding: 5px;
+}
+.pep h3{
+ color: #fff;
+ font-size: 1.3em;
+ padding-top: 40px;
+ padding-left: 100px;
+}
+.pep p{
+ color: #BC983C;
+ font-size: 1.4em;
+ padding-left: 100px;
+}
+.cushin{
+  margin-top: 20px;
+  margin-left: 100px;
+}
+.union{
+ margin-left: 25%;
+ position: relative;
+}
+.union h6{
+ position: absolute;
+ top: 70px;
+ right: 40px;
+ font-size: 1.9em;
+ color: #2B495E;
+ z-index: 1;
+}
+.union h4{
+ position: absolute;
+ top: 110px;
+ right: 50px;
+ font-size: 1.8em;
+ color: #2B495E;
+ z-index: 1;
+}
+ .union a{
+   font-size: 1em;
+   color: #fff;
+ }
+.shop-btn button{
+ margin-left: 130px;
+ margin-top: 200px;
+ padding: 9px 22px;
+ font-size: 1.1em;
+ border-radius: 5px;
+ font-weight: 500;
+ background-color: #fff;
+ color: #000;
+ outline: none;
+}
+
+.shop-btn button:hover {
+   background-color: #f3f3f3;
+}
+
 /* large devices */
 @media screen and (max-width: 1200px) {
+ .topnav .search-container button {
+   margin-top: 5px;
+  }
+ .topnav input[type=text] {
+   padding:12px;
+  }
+   #icons a{
+    margin-left: 10px;
+  }
+ .pep h3{
+  color: #fff;
+  font-size: 1.3em;
+  padding-top: 90px;
+  padding-left: 10px;
+ }
+ .cushin{
+   display: none;
+ }
+ .pep p{
+  padding-left: 170px;
+ }
+ .union{
+   margin-left: 80%;
+   position: absolute;
+ }
  .topnav a, .dropdown .dropbtn{
    display: block;
    font-size: 1em;
  }
-
+ #fu{
+   display: none;
+ }
+ #cu{
+   display: none;
+ }
  #head{
    display: block;
 }
+
  .topnav .search-container{
    display: block;
  }
@@ -157,17 +253,14 @@
    z-index: 2;
    cursor: pointer;
    position:relative;
-   right: 5px;
+   right: 30px;
    background-color: #2B495E;
-   float: right;
-   padding: 6px 10px;
+   padding: 11px 10px;
    margin-top: 15px;
-   margin-right: 16px;
+   margin-right: 26px;
    border: none;
   }
- .topnav .search-container button{
-   display: block;
- }
+
  .topnav a.icon {
    display: none;
  }
@@ -267,10 +360,7 @@
    display: none;
 }
 }
- #icons{
-   float: left;
-   padding-left: 10px;
- }
+
  .topnav .icon{
    display: none;
  }
@@ -637,69 +727,6 @@ padding-bottom: 10px;
    height: 50%;
    border-radius:5px 5px 0 0;
 }
-
-/* User section */
-#User{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0,0,0,0.8);
-  background-image: url('images/pexels-vecislavas-popa-1571470.jpg');
-  background-size: cover;
-  background-position: center;
-  background-blend-mode:saturation;
-}
-.profile{
-text-align: center;
-}
-.profile h2{
-  font-size: 2em;
-  text-align: center;
-  text-indent: 20px;
-  font-weight: 300;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #fff;
-  padding-bottom: 22px;
-}
- .profile p{
-  color: #fff;
-  font-size: 1.3em;
-  font-weight: 300;
-  text-indent:10px;
-  padding-bottom: 30px;
- }
- #reg{
-  color: #BC983C;
-  font-size: 1.1em;
-  font-weight: 300;
-  text-indent:10px;
-  padding-bottom: 30px;
- }
-.profile input{
-  padding: 1.5% 30% 2% 2%;
-  outline: none;
-  color: #fff;
-  border: 1px solid #e9ba42;
-  background-color: transparent;
-  border-radius: 8px;
-  text-align: left;
-}
-.Con{
-  padding: 2% 145px;
-  color: #fff;
-  background-color: #e9ba42;
-  box-shadow: 2px #f8f9fa;
-  margin: 30px 0px 20px;
-}
-.facebook{
-  margin-top: 5%;
-  padding: 2% 115px;
-  color: #fff;
-  background-color: blue;
-}
-
  /* Media queries */
 @media screen and (max-width: 600px) {
  #icons{
@@ -1069,7 +1096,7 @@ h1{
 
  .topnav.responsive .dropdown {float: none;}
  .topnav.responsive .dropdown-content {position: relative;}
- .topnav.responsive .dropdown .dropbtn, .search-container {
+ .topnav.responsive .dropdown .dropbtn{
    display: block;
    width: 100%;
    text-align: left;
@@ -1117,7 +1144,7 @@ h1{
    font-size: 0.8em;
  }
  .furn-head{
-   margin-left: 30px;
+   margin-block-start: auto;
    font-size: 2.2em;
  }
  .cus-img{
@@ -1255,6 +1282,26 @@ h1{
 }
 
 @media screen and (min-width: 1280px) {
+ .topnav .search-container button {
+  margin-top: 5px;
+ }
+.topnav input[type=text] {
+  padding:12px;
+ }
+  #icons a{
+   margin-left: 10px;
+ }
+
+.pep h3{
+ color: #fff;
+ font-size: 1.3em;
+ padding-top: 90px;
+ padding-left: 80px;
+}
+.pep p{
+ padding-left: 170px;
+}
+
  .customer{
    flex-direction: row;
  }
@@ -1391,6 +1438,7 @@ h1{
 .form-control{
  border:1px solid #2B495E;
  padding: 9px 300px 10px 10px;
+ outline: none;
 }
 
 #about-section{
@@ -1434,6 +1482,48 @@ display: block;
 }
 
 @media screen and (width: 540px) {
+.topnav .search-container button {
+  margin-top: 5px;
+ }
+.topnav input[type=text] {
+  padding:12px;
+ }
+  #icons a{
+   margin-left: 10px;
+ }
+ .shop_now{
+   height: 50vh;
+   display: flex;
+   flex-direction: column;
+ }
+ .shop-btn button{
+   margin-left: 35%;
+   margin-top: 30px;
+   padding: 12px 20px;
+   font-size: 1em;
+  }
+   
+.pep h5{
+ color: #fff;
+ text-align: center;
+ padding: 5px;
+}
+.pep h3{
+ color: #fff;
+ font-size: 1.4em;
+ padding-top: 90px;
+ padding-left: 30px;
+}
+.pep p{
+ padding-left: 170px;
+}
+ .cushin{
+   display: none;
+ }
+ .union{
+   display: none;
+ }
+
  .customer{
    flex-direction: column-reverse;
  }
@@ -1564,6 +1654,48 @@ h1{
 }
 
 @media screen and (width: 280px) {
+ .topnav .search-container button {
+  margin-top: 5px;
+}
+.topnav input[type=text] {
+  padding:12px;
+}
+  #icons a{
+   margin-left: 10px;
+ }
+ .shop_now{
+   height: 50vh;
+   display: flex;
+   flex-direction: column;
+}
+ .shop-btn button{
+   margin-left: 90px;
+   margin-top: 20px;
+   padding:5px 12px;
+   font-size: 1em;
+  }
+   
+.pep h5{
+ color: #fff;
+ text-align: center;
+ padding: 5px;
+}
+.pep h3{
+ color: #fff;
+ font-size: 1.1em;
+ padding-top: 40px;
+ padding-left: 30px;
+}
+.pep p{
+ padding-left: 50px;
+}
+ .cushin{
+   display: none;
+ }
+ .union{
+   display: none;
+ }
+
  .customer{
    flex-direction: column-reverse;
  }
@@ -1656,4 +1788,117 @@ h1{
  height: 300%;
  border-radius:5px 5px 0 0;
 }
+}
+@media screen and (max-height: 450px) {
+ .sidenav {padding-top: 15px;}
+}
+/*  Cart*/
+.sidenav {
+ display: none;
+ height: 70%;
+ width: 25%;
+ position: fixed;
+ z-index: 1;
+ top: 0;
+ right: 0;
+ margin-top: 63px;
+ background-color: #111;
+ overflow-x: hidden;
+}
+.sidenav #closebtn {
+ padding: 5px;
+ font-size: 36px;
+}
+.card{
+ height: 100%;
+ width: 100%;
+ background-color: #111e27;
+ color: #fff;
+}
+.card-text{
+ display: flex;
+ padding: 5px;
+ justify-content: space-between;
+ align-items: center;
+ background-color:#474234;
+}
+table{
+ padding-top: 5px;
+ width: 100%;
+ height: 15%;
+}
+.center{
+ text-align: center;
+ padding: 5px;
+}
+.spread{
+ display: flex;
+ justify-content:space-between;
+ padding: 15px 5px 5px 10px;
+}
+
+.spread button {
+ padding: 4px 7px;
+}
+/* User profile */
+
+#User{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ height: 100vh;
+ background-color: rgba(0,0,0,0.8);
+ background-image: url('images/pexels-vecislavas-popa-1571470.jpg');
+ background-size: cover;
+ background-position: center;
+ background-blend-mode:saturation;
+}
+.profile{
+text-align: center;
+}
+.profile h2{
+ font-size: 2em;
+ text-align: center;
+ text-indent: 20px;
+ font-weight: 300;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ color: #fff;
+ padding-bottom: 22px;
+}
+.profile p{
+ color: #fff;
+ font-size: 1.3em;
+ font-weight: 300;
+ text-indent:10px;
+ padding-bottom: 30px;
+}
+#reg{
+ color: #BC983C;
+ font-size: 1.1em;
+ font-weight: 300;
+ text-indent:10px;
+ padding-bottom: 30px;
+}
+.profile input{
+ padding: 1.5% 30% 2% 2%;
+ outline: none;
+ color: #fff;
+ border: 1px solid #e9ba42;
+ background-color: transparent;
+ border-radius: 8px;
+ text-align: left;
+}
+.Con{
+ padding: 2% 145px;
+ color: #fff;
+ background-color: #e9ba42;
+ box-shadow: 2px #f8f9fa;
+ margin: 30px 0px 20px;
+}
+.facebook{
+ margin-top: 5%;
+ padding: 2% 115px;
+ color: #fff;
+ background-color: blue;
 }
